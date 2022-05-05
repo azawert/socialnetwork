@@ -1,0 +1,26 @@
+textarea {
+    width: 100%;
+    background-color: rgb(206, 202, 202);
+
+}
+button {
+    width: 9%;
+    background-color: green;
+    color:white;
+    align-self: flex-end;
+    text-align: center;
+    border: none;
+    margin: 10px 0;
+    height: 2rem;
+}
+
+.posts__container {
+    display:flex;
+    flex-direction: column;
+}
+
+.headingText {
+    color:lightgrey;
+    font-size: 20px;
+    margin-bottom: 20px;
+}

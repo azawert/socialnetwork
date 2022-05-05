@@ -1,0 +1,23 @@
+.nav div {
+    width: 30px;
+}
+.item a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    
+}
+.item a:hover {
+    text-decoration: underline;
+    color: rgb(167, 163, 163)
+    
+}
+.nav {
+    grid-area:n;
+    background-color:green
+}
+
+.item:last-child {
+    margin-top: 10px;
+}

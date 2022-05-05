@@ -1,0 +1,15 @@
+.header {
+    grid-area:h;
+    background-color: green;
+    display: flex;
+    align-items:center;
+}
+.header img {
+    width: 50px;
+    cursor: pointer;
+    transition: width 1s;
+}
+
+.header img:hover{
+    width: 55px;
+}
