@@ -21,7 +21,10 @@
 }
 .nav {
     grid-area:n;
-    background-color:green
+    background-color:green;
+    display:flex;
+    flex-direction: column;
+
 }
 
 .item:last-child {
