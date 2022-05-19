@@ -1,14 +1,21 @@
 import React from "react";
 import classes from './Post.module.css'
-const MyPosts = (props) => {
+const Post = (props) => {
+
     return (
-        
+
              <div className={classes.item}>
-              <img src="https://www.meme-arsenal.com/memes/ede6da73f226721ea502fde3e1ad9088.jpg" alt=""></img>
-               {props.message}
+              <img src={props.avatar} alt=""></img>
+                 <div className={classes.postContent}>
+                   {props.message}
+                 </div>
+                 <div>
+                     likes: {props.likesCount}
+                 </div>
              </div>
+
              
       )
 }
 
-export default MyPosts;
+export default Post;

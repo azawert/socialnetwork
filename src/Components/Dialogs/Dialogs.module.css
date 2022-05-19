@@ -1,0 +1,32 @@
+.dialog{
+    margin-bottom: 5px;
+}
+.dialogs{
+    display:grid;
+    grid-template-columns: 2fr 10fr;
+}
+.dialogs_item{
+    padding: 10px;
+
+}
+.href.active {
+    color: gold;
+    font-size: 20px;
+}
+
+.messages {
+    padding: 10px;
+}
+.message {
+    margin-bottom: 5px;
+}
+.href {
+    text-decoration: none;
+    color: black;
+    transition: font-size .5s ease;
+}
+.href:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.1rem
+}

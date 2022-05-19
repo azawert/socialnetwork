@@ -6,12 +6,18 @@
     text-decoration: none;
     color: white;
     font-size: 25px;
+    border: 5px transparent;
+    transition: all ease-in-out .2s;
+    margin-left: 5px;
     
 }
 .item a:hover {
-    text-decoration: underline;
-    color: rgb(167, 163, 163)
-    
+
+    color: rgb(167, 163, 163);
+    border-bottom: 5px solid #FFFFFF;
+}
+.item a.active {
+    color: gold;
 }
 .nav {
     grid-area:n;
