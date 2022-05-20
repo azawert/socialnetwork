@@ -5,6 +5,7 @@
     height: 150px;
     object-fit:fill;
     margin-bottom: 10px;
+    border-radius: 0;
 }
 
 .avatar {

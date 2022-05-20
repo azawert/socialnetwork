@@ -1,3 +1,5 @@
+import {rerenderEntireTree} from "../render";
+
 let state = {
     profilePage: {
         profileInfo:[
@@ -7,8 +9,8 @@ let state = {
             {text:'My posts on the wall'}
         ],
         myPosts:[
-            {message:'hi',likesCount:23,avatar:'https://download-cs.net/steam/avatars/3426.jpg'},
-            {message:'how are you?',likesCount: 12,avatar:'https://download-cs.net/steam/avatars/3426.jpg'}
+            {id:1,message:'hi',likesCount:23,avatar:'https://download-cs.net/steam/avatars/3426.jpg'},
+            {id:2,message:'how are you?',likesCount: 12,avatar:'https://download-cs.net/steam/avatars/3426.jpg'}
         ]
     },
     messagesPage: {
@@ -32,6 +34,18 @@ let state = {
 
         ]
     }
+}
+
+export let addPost = (postMessage) => {
+    let newPost = {
+        id:3,
+        message:postMessage,
+        likesCount:0,
+        avatar:'https://download-cs.net/steam/avatars/3426.jpg'
+    };
+
+    state.profilePage.myPosts.push(newPost)
+    rerenderEntireTree(state,addPost)
 }
 
 export default state;

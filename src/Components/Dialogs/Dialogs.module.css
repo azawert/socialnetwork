@@ -4,6 +4,7 @@
 .dialogs{
     display:grid;
     grid-template-columns: 10fr 10fr;
+
 }
 .dialogs_item{
     padding: 10px;
@@ -30,6 +31,25 @@
     text-decoration: underline;
     font-size: 1.1rem
 }
+
+.addButton:hover {
+    cursor: pointer;
+    color:green;
+    background-color: #FFFFFF;
+    border: 1px solid green;
+    font-size: 20px;
+}
+.addButton {
+    border-radius: 3px;
+    transition: all .5s ease-in;
+    align-self: center;
+    width: 25%
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+}
 textarea{
-    width:50%;
+    align-self: center;
 }
