@@ -24,3 +24,26 @@ button {
     font-size: 20px;
     margin-bottom: 20px;
 }
+.addButton {
+    border-radius: 3px;
+    transition: all .5s ease-in;
+    align-self: center;
+}
+
+.addButton:hover {
+    cursor: pointer;
+    color:green;
+    background-color: #FFFFFF;
+    border: 1px solid green;
+    font-size: 20px;
+}
+
+textarea {
+    width: 100%;
+    display:block
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+}

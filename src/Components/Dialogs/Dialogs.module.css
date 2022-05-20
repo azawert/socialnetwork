@@ -3,7 +3,7 @@
 }
 .dialogs{
     display:grid;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 10fr 10fr;
 }
 .dialogs_item{
     padding: 10px;
@@ -29,4 +29,7 @@
     cursor: pointer;
     text-decoration: underline;
     font-size: 1.1rem
+}
+textarea{
+    width:50%;
 }

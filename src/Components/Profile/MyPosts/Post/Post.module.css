@@ -35,3 +35,8 @@
     font-size: 20px;
 }
 
+textarea {
+    width: 50%;
+    display:block;
+}
+
