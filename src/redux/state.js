@@ -11,7 +11,8 @@ let state = {
         myPosts:[
             {id:1,message:'hi',likesCount:23,avatar:'https://download-cs.net/steam/avatars/3426.jpg'},
             {id:2,message:'how are you?',likesCount: 12,avatar:'https://download-cs.net/steam/avatars/3426.jpg'}
-        ]
+        ],
+        propsNewText:'s'
     },
     messagesPage: {
         messages:[
@@ -46,6 +47,10 @@ export let addPost = (postMessage) => {
 
     state.profilePage.myPosts.push(newPost)
     rerenderEntireTree(state,addPost)
+}
+export let updateNewPostText = (newText) => {
+    state.profilePage.propsNewText = newText;
+    rerenderEntireTree(state,updateNewPostText)
 }
 
 export default state;
